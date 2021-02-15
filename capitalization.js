@@ -1,7 +1,7 @@
 "use strict";
 
 function capitalize(str) {
-  const name = "louise";
+  let name = "louise";
   const nameCap =
     name.substring(0, 1).toUpperCase() + name.substring(1).toLowerCase();
 
