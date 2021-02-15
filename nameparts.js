@@ -15,9 +15,15 @@ capitalize(str);
 
 // Sætter i rigtige rækkefølge
 
-function fullName(lastName, firstName, middleName) {
-  console.log(firstName, middleName, lastName);
+function getNameParts(fullname) {
+  const firstSpace = fullname.indexOf(" ");
+  const lastSpace = fullname.lastIndexOf(" ");
+
+  const firstname = fullname.substring(0, firstSpace);
+  const middlename = fullname.substring(firstSpace, lastSpace);
+  const lastname = fullname.substring(lastSpace);
+
+  console.log(`Hello my name is ${firstname}${middlename}${lastname}`);
 }
 
-fullName("Potter", "Harry", "James");
-fullName("Potter", "Harry");
+getNameParts("Harry James Potter");
