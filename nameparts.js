@@ -20,3 +20,5 @@ function fullName(lastName, firstName, middleName = "") {
 }
 
 fullName("Potter", "Harry", "James");
+
+// 16/2 return values
