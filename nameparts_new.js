@@ -14,7 +14,7 @@ function nameParts(fullName) {
   return { firstName, middleName, lastName };
 }
 
-const theFullName = nameParts("louise storEGaard nielsen");
+const theFullName = nameParts("louise storEGaard Hej nielsen");
 console.log(theFullName);
 
 function capitalize(str) {
